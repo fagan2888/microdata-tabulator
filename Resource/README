@@ -1,0 +1,5 @@
+1. AutomateDirectoryCreation.sh
+This shell script creates new directories automatically for any sample added to the system for hte first time. It also puts sampleDes with correct labels, ipumsi_metaDAta and AllQueriesFile into the concerened Directory.
+
+2. Original.sh
+This shell file tabulates new samples. 

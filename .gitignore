@@ -1,0 +1,11 @@
+bin/
+.class
+.settings/
+build/
+.project
+.classpath
+*.log
+tz2002a/
+Output/
+target*
+output*

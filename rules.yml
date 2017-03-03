@@ -1,0 +1,927 @@
+
+rules:
+-
+  name: "Total population"
+  code: TOTPOP
+  description: "This variable reports the total number persons in the geographic unit."
+  data_table_id: POPTOTAL
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX, "IN", 1, 2, 9 ]
+    where_h:
+      - []
+-
+  name: "Total males"
+  code: TOTMALE
+  description: "This variable reports the total number of males in the geographic unit."
+  data_table_id: POPSEX
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX, "=", 1 ]
+    where_h:
+      - []
+
+-
+  name: "Total females"
+  code: TOTFEMALE
+  description: "This variable reports the total number of females in the geographic unit."
+  data_table_id: POPSEX
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX, "=", 2 ]
+    where_h:
+      - []
+
+-
+  name: Population age 0 to 4
+  code: POP0004
+  description: This variable reports the total people population age 0 to 4 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",00,04]
+    where_h:
+      - []
+-
+  name: Population age 5 to 9
+  code: POP0509
+  description: This variable reports the total people population age 5 to 9 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",05,09]
+    where_h:
+      - []
+-
+  name: Population age 10 to 14
+  code: POP1014
+  description: This variable reports the total people population age 10 to 14 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",10,14]
+    where_h:
+      - []
+-
+  name: Population age 15 to 19
+  code: POP1519
+  description: This variable reports the total people population age 15 to 19 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",15,19]
+    where_h:
+      - []
+-
+  name: Population age 20 to 24
+  code: POP2024
+  description: This variable reports the total people population age 20 to 24 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",20,24]
+    where_h:
+      - []
+-
+  name: Population age 25 to 29
+  code: POP2529
+  description: This variable reports the total people population age 25 to 29 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",25,29]
+    where_h:
+      - []
+-
+  name: Population age 30 to 34
+  code: POP3034
+  description: This variable reports the total people population age 30 to 34 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",30,34]
+    where_h:
+      - []
+-
+  name: Population age 35 to 39
+  code: POP3539
+  description: This variable reports the total people population age 35 to 39 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",35,39]
+    where_h:
+      - []
+-
+  name: Population age 40 to 44
+  code: POP4044
+  description: This variable reports the total people population age 40 to 44 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",40,44]
+    where_h:
+      - []
+-
+  name: Population age 45 to 49
+  code: POP4549
+  description: This variable reports the total people population age 45 to 49 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",45,49]
+    where_h:
+      - []
+-
+  name: Population age 50 to 54
+  code: POP5054
+  description: This variable reports the total people population age 50 to 54 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",50,54]
+    where_h:
+      - []
+-
+  name: Population age 55 to 59
+  code: POP5559
+  description: This variable reports the total people population age 55 to 59 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",55,59]
+    where_h:
+      - []
+-
+  name: Population age 60 to 64
+  code: POP6064
+  description: This variable reports the total people population age 60 to 64 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",60,64]
+    where_h:
+      - []
+-
+  name: Population age 65 to 69
+  code: POP6569
+  description: This variable reports the total people population age 65 to 69 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",65,69]
+    where_h:
+      - []
+-
+  name: Population age 70 to 74
+  code: POP7074
+  description: This variable reports the total people population age 70 to 74 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",70,74]
+    where_h:
+      - []
+-
+  name: Population age 75 to 79
+  code: POP7579
+  description: This variable reports the total people population age 75 to 79 of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,"BETWEEN",75,79]
+    where_h:
+      - []
+
+-
+  name: Population age 80 and older
+  code: POP80
+  description: This variable reports the total people population age 80 and above of the geographic unit.
+  data_table_id: POPAGE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,">=",80]
+    where_h:
+      - []
+
+-
+  name: Male population age 0 to 4
+  code: POPM0004
+  description: This variable reports the total male population age 0 to 4 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",00,04]
+    where_h:
+      - []
+-
+  name: Male population age 5 to 9
+  code: POPM0509
+  description: This variable reports the total male population age 5 to 9 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",05,09]
+    where_h:
+      - []
+-
+  name: Male population age 10 to 14
+  code: POPM1014
+  description: This variable reports the total male population age 10 to 14 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",10,14]
+    where_h:
+      - []
+-
+  name: Male population age 15 to 19
+  code: POPM1519
+  description: This variable reports the total male population age 15 to 19 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",15,19]
+    where_h:
+      - []
+-
+  name: Male population age 20 to 24
+  code: POPM2024
+  description: This variable reports the total male population age 20 to 24 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",20,24]
+    where_h:
+      - []
+-
+  name: Male population age 25 to 29
+  code: POPM2529
+  description: This variable reports the total male population age 25 to 29 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",25,29]
+    where_h:
+      - []
+-
+  name: Male population age 30 to 34
+  code: POPM3034
+  description: This variable reports the total male population age 30 to 34 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",30,34]
+    where_h:
+      - []
+-
+  name: Male population age 35 to 39
+  code: POPM3539
+  description: This variable reports the total male population age 35 to 39 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",35,39]
+    where_h:
+      - []
+-
+  name: Male population age 40 to 44
+  code: POPM4044
+  description: This variable reports the total male population age 40 to 44 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",40,44]
+    where_h:
+      - []
+-
+  name: Male population age 45 to 49
+  code: POPM4549
+  description: This variable reports the total male population age 45 to 49 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",45,49]
+    where_h:
+      - []
+-
+  name: Male population age 50 to 54
+  code: POPM5054
+  description: This variable reports the total male population age 50 to 54 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",50,54]
+    where_h:
+      - []
+-
+  name: Male population age 55 to 59
+  code: POPM5559
+  description: This variable reports the total male population age 55 to 59 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",55,59]
+    where_h:
+      - []
+-
+  name: Male population age 60 to 64
+  code: POPM6064
+  description: This variable reports the total male population age 60 to 64 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",60,64]
+    where_h:
+      - []
+-
+  name: Male population age 65 to 69
+  code: POPM6569
+  description: This variable reports the total male population age 65 to 69 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",65,69]
+    where_h:
+      - []
+-
+  name: Male population age 70 to 74
+  code: POPM7074
+  description: This variable reports the total male population age 70 to 74 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",70,74]
+    where_h:
+      - []
+-
+  name: Male population age 75 to 79
+  code: POPM7579
+  description: This variable reports the total male population age 75 to 79 of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",1]
+      - [AGE,"BETWEEN",75,79]
+    where_h:
+      - []
+
+-
+  name: Male population age 80 and older
+  code: POPM80
+  description: This variable reports the total male population age 80 and above of the geographic unit.
+  data_table_id: POPAGEM
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,">=",80]
+      - [SEX,"=",1]
+    where_h:
+      - []
+
+
+-
+  name: Female population age 0 to 4
+  code: POPF0004
+  description: This variable reports the total female population age 0 to 4 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",00,04]
+    where_h:
+      - []
+-
+  name: Female population age 5 to 9
+  code: POPF0509
+  description: This variable reports the total female population age 5 to 9 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",05,09]
+    where_h:
+      - []
+-
+  name: Female population age 10 to 14
+  code: POPF1014
+  description: This variable reports the total female population age 10 to 14 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",10,14]
+    where_h:
+      - []
+-
+  name: Female population age 15 to 19
+  code: POPF1519
+  description: This variable reports the total female population age 15 to 19 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",15,19]
+    where_h:
+      - []
+-
+  name: Female population age 20 to 24
+  code: POPF2024
+  description: This variable reports the total female population age 20 to 24 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",20,24]
+    where_h:
+      - []
+-
+  name: Female population age 25 to 29
+  code: POPF2529
+  description: This variable reports the total female population age 25 to 29 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",25,29]
+    where_h:
+      - []
+-
+  name: Female population age 30 to 34
+  code: POPF3034
+  description: This variable reports the total female population age 30 to 34 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",30,34]
+    where_h:
+      - []
+-
+  name: Female population age 35 to 39
+  code: POPF3539
+  description: This variable reports the total female population age 35 to 39 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",35,39]
+    where_h:
+      - []
+-
+  name: Female population age 40 to 44
+  code: POPF4044
+  description: This variable reports the total female population age 40 to 44 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",40,44]
+    where_h:
+      - []
+-
+  name: Female population age 45 to 49
+  code: POPF4549
+  description: This variable reports the total female population age 45 to 49 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",45,49]
+    where_h:
+      - []
+-
+  name: Female population age 50 to 54
+  code: POPF5054
+  description: This variable reports the total female population age 50 to 54 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",50,54]
+    where_h:
+      - []
+-
+  name: Female population age 55 to 59
+  code: POPF5559
+  description: This variable reports the total female population age 55 to 59 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",55,59]
+    where_h:
+      - []
+-
+  name: Female population age 60 to 64
+  code: POPF6064
+  description: This variable reports the total female population age 60 to 64 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",60,64]
+    where_h:
+      - []
+-
+  name: Female population age 65 to 69
+  code: POPF6569
+  description: This variable reports the total female population age 65 to 69 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",65,69]
+    where_h:
+      - []
+-
+  name: Female population age 70 to 74
+  code: POPF7074
+  description: This variable reports the total female population age 70 to 74 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",70,74]
+    where_h:
+      - []
+-
+  name: Female population age 75 to 79
+  code: POPF7579
+  description: This variable reports the total female population age 75 to 79 of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [SEX,"=",2]
+      - [AGE,"BETWEEN",75,79]
+    where_h:
+      - []
+
+-
+  name: Female population age 80 and older
+  code: POPF80
+  description: This variable reports the total female population age 80 and above of the geographic unit.
+  data_table_id: POPAGEF
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [AGE,">=",80]
+      - [SEX,"=",2]
+    where_h:
+      - []
+
+
+-
+  name: "Percent of households with piped water"
+  code: PIPEDWATER
+  description: "This variable reports the percentage of households in the geographic unit with access to piped water."
+  data_table_id: WATER
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10]
+      - [WATERSRC, ">=", 1] #If you have one clause
+      - [WATERSRC, "<",  4] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10]
+
+-
+  name: "Percent of households connected to sewage disposal"
+  code: SEWAGEDISP
+  description: "This variable reports the percentage of households in the geographic unit that are connected to a human waste network or septic system."
+  data_table_id: SEWAGE
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ,"=",10] #If you have one clause
+      - [SEWAGE, ">=", 1] #If you have one clause
+      - [SEWAGE, "<",  3] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ,"=",10] #If you have one clause
+
+-
+  name: "Percent of households with a flush toilet"
+  code: TOILETHH
+  description: "This variable reports the percentage of households in the geographic unit that have a toilet."
+  data_table_id: TOILET
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ,"=",10] #If you have one clause
+      - [TOILET, "=", 21] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ,"=",10] #If you have one clause
+      - [TOILET, "BETWEEN", 10, 21]
+
+-
+  name: "Percent of households with a telephone"
+  code: TELEPHONE
+  description: "This variable reports the percentage of households in the geographic unit that have a telephone: access to a phone or an installed line."
+  data_table_id: PHONE
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [PHONE, "=", 2] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [PHONE, "BETWEEN", 1, 2]
+
+
+-
+  name: "Percent of households with an automobile"
+  code: AUTOMOBILE
+  description: "This variable reports the percentage of households in the geographic unit that owned or had use of a vehicle."
+  data_table_id: AUTO
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [AUTOS, "BETWEEN", 1,7] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [AUTOS, "BETWEEN", 0,7]
+
+-
+  name: "Percent of households with a television"
+  code: TELEVISION
+  description: "This variable reports the percentage of households in the geographic unit that have a television."
+  data_table_id: TELEVISION
+  operation: Count
+  query_variable: RECTYPE
+  query_on: H
+  numerator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [TV, "BETWEEN", 20, 54] #If you have one clause
+  denominator:
+    where_p:
+      - []
+    where_h:
+      - [GQ, "=", 10] #If you have one clause
+      - [TV, "BETWEEN", 10, 54]
+
+-
+  name: "Number of rooms per household"
+  code: NROOMS
+  description: "This variable reports the mean number of rooms occupied by the households in the geographic unit."
+  data_table_id: ROOMS
+  operation: Mean
+  query_variable: ROOMS
+  query_on: H
+  tabulation:
+    where_p:
+      - []
+    where_h:
+      #- [GQ, "=", 10] #If you have one clause
+      #- [ROOMS, "BETWEEN", 0, 30] #If you have one clause
+      - ["([GQ,=,10]) AND ([ROOMS,BETWEEN,0,30])"]
+-
+  name: "Population in the labor force"
+  code: LABORFORCE
+  description: "This variable reports the number of persons age 16 and older in the geographic unit who are in the labor force (generally, employed or actively seeking employment)."
+  data_table_id: LABFORCE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  tabulation:
+    where_p:
+      - [EMPSTAT, "BETWEEN", 100, 240]
+      - [AGE,">=",16]
+    where_h:
+      - []
+
+
+-
+  name: "Percent of persons in the labor force"
+  code: LFP
+  description: "This variable reports the percentage of persons age 16 to 65 in the geographic unit who are in the labor force."
+  data_table_id: LFRATE
+  operation: Count
+  query_variable: RECTYPEP
+  query_on: P
+  numerator:
+    where_p:
+      - [EMPSTAT, "BETWEEN", 100, 240]
+      - [AGE,"BETWEEN",16,65]
+    where_h:
+      - []
+  denominator:
+    where_p:
+      - [AGE,"BETWEEN",16,65]
+    where_h:
+      - []
+
+

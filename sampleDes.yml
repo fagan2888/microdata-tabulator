@@ -1,0 +1,19 @@
+---
+rules_file_path: ./rules.yml
+terrapop_samples:
+  sample_id: us2002a
+  label: United States ACS 2002
+  description: None
+NAT:
+  label: "United States: National, 2002"
+  var: CNTRY
+  children:
+  - HFLAD:
+      label: "United States: Regions, 2002"
+      var: REGION
+      children:
+      - HSLAD:
+          label: "United States: States, 2002"
+          var: STATEFIP
+file_path: data/us2002a_10k_usa.dat.gz
+country_id: United States

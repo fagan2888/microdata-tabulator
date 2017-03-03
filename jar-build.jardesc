@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="terrapop-linear-tabulator/tabulator.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/terrapop-linear-tabulator/jar-build.jardesc" exportErrors="false" exportWarnings="false" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/terrapop-linear-tabulator/MANIFEST.MF" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/terrapop-linear-tabulator/.project"/>
+        <folder path="/terrapop-linear-tabulator/target"/>
+        <file path="/terrapop-linear-tabulator/pom.xml"/>
+        <folder path="/terrapop-linear-tabulator/doc"/>
+        <javaElement handleIdentifier="=terrapop-linear-tabulator/src"/>
+        <file path="/terrapop-linear-tabulator/.classpath"/>
+        <file path="/terrapop-linear-tabulator/MANIFEST.MF"/>
+        <folder path="/terrapop-linear-tabulator/Resource"/>
+        <file path="/terrapop-linear-tabulator/jar-build.jardesc"/>
+        <file path="/terrapop-linear-tabulator/README"/>
+        <folder path="/terrapop-linear-tabulator/bin"/>
+        <file path="/terrapop-linear-tabulator/build.xml"/>
+        <file path="/terrapop-linear-tabulator/ipumsi_metadata.csv"/>
+        <folder path="/terrapop-linear-tabulator/lib"/>
+        <file path="/terrapop-linear-tabulator/AllQueriesNew.yml"/>
+        <file path="/terrapop-linear-tabulator/sampleDes.yml"/>
+        <file path="/terrapop-linear-tabulator/.gitignore"/>
+    </selectedElements>
+</jardesc>
